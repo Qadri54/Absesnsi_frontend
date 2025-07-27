@@ -1,3 +1,3 @@
 <?php
-$api_base_url = "http://127.0.0.1:8000/api";
+$api_base_url = "http://103.197.190.182:8081/api/";
 
