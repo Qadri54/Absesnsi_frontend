@@ -1,0 +1,116 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fc;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 30px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #333;
+}
+
+/* Tombol khusus jika tidak pakai class Bootstrap */
+.btn-rekap {
+  background-color: #28a745;
+  color: white;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-rekap:hover {
+  background-color: #218838;
+}
+
+/* Jika tetap gunakan tabel custom, selain .table Bootstrap */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+thead th {
+  background-color: #2e9636 !important;
+  color: white !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  font-weight: 600;
+}
+.custom-green-header th {
+  background-color: #2e9636 !important;
+  color: white !important;
+  text-align: center;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* === Tampilan Khusus Cetak/Export Excel === */
+.only-excel {
+  display: none;
+}
+
+.only-web {
+  display: inline;
+}
+
+@media screen {
+  .only-excel {
+    display: none !important;
+  }
+  .only-web {
+    display: inline !important;
+  }
+}
+
+@media print {
+  .only-web {
+    display: none !important;
+  }
+  .only-excel {
+    display: inline !important;
+  }
+  .pagination .page-link {
+    color: #28a745;
+  }
+  .pagination .page-item.active .page-link {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+  }
+  thead.custom-green th {
+    background-color: #2e7d32 !important;
+    color: white !important;
+  }
+
+  table tr:hover {
+    background-color: #f1f1f1;
+    thead.custom-green th {
+      background-color: #2e7d32; /* Hijau pekat seperti di data_karyawan */
+      color: white;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+/* ======================== */
+/*      SIDEBAR KARYAWAN   */
+/* ======================== */
+
+/* Sidebar wrapper */
+.sidebar-karyawan,
+.sidebar-green {
+  background-color: #2e7d32 !important; /* Hijau gelap */
+  color: #ffffff;
+}
+
+/* Header Sidebar */
+.sidebar-karyawan .offcanvas-header {
+  border-bottom: 1px solid #a5d6a7;
+}
+
+.sidebar-karyawan .offcanvas-title,
+.sidebar-green .offcanvas-title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Nama karyawan */
+.sidebar-karyawan h6 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Tanggal dan Jam */
+.sidebar-karyawan .text-muted,
+.sidebar-karyawan #jamNow {
+  color: #c8e6c9 !important;
+  font-size: 13px;
+}
+
+/* Tombol Logout */
+.logout-btn {
+  background-color: #e53935;
+  color: #ffffff;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.logout-btn:hover {
+  background-color: #c62828;
+  color: #ffffff;
+}
+
+/* Link Navigasi */
+.sidebar-karyawan .nav-link,
+.sidebar-green .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-karyawan .nav-link:hover,
+.sidebar-green .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Ikon Navigasi */
+.sidebar-karyawan .nav-link i {
+  width: 20px;
+  text-align: center;
+}
+
+/* Divider */
+.sidebar-karyawan hr {
+  border-top: 1px solid #a5d6a7;
+}
+
+/* Tombol Tambahan Sidebar Hijau */
+.sidebar-green .btn,
+.sidebar-green .nav-link {
+  color: white !important;
+}
+
+.sidebar-green .btn-outline-success {
+  border-color: #ffffff;
+  color: white;
+}
+
+.sidebar-green .btn-outline-success:hover {
+  background-color: white;
+  color: #2e7d32;
+}

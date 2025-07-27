@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cek Lokasi Saya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        padding: 30px;
+        text-align: center;
+      }
+      .box {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .latlon {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #333;
+      }
+      .status {
+        font-size: 16px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>📍 Cek Lokasi GPS Anda</h2>
+      <div class="latlon" id="latitude">Latitude: -</div>
+      <div class="latlon" id="longitude">Longitude: -</div>
+      <div class="latlon" id="accuracy">Akurasi: -</div>
+      <div class="status" id="status">Menunggu akses lokasi...</div>
+    </div>
+
+    <script>
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function (pos) {
+            document.getElementById("latitude").textContent =
+              "Latitude: " + pos.coords.latitude;
+            document.getElementById("longitude").textContent =
+              "Longitude: " + pos.coords.longitude;
+            document.getElementById("accuracy").textContent =
+              "Akurasi: " + pos.coords.accuracy.toFixed(1) + " meter";
+            document.getElementById("status").textContent =
+              "✅ Lokasi berhasil diambil!";
+          },
+          function (error) {
+            document.getElementById("status").textContent =
+              "❌ Gagal mengambil lokasi: " + error.message;
+          }
+        );
+      } else {
+        document.getElementById("status").textContent =
+          "❌ Browser Anda tidak mendukung Geolocation.";
+      }
+    </script>
+  </body>
+</html>

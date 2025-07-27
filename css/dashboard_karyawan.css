@@ -1,0 +1,27 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f9;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.btn-green {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: #27692d;
+}
+.btn-green {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+}
+
+.btn-green:hover {
+  background-color: #27692d;
+  color: white;
+}

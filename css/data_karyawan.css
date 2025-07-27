@@ -1,0 +1,104 @@
+/* ========== LAYOUT DASAR ========== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  margin-left: 270px; /* sidebar width + padding */
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-height: calc(100vh - 80px);
+}
+
+/* ========== JUDUL ========== */
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+/* ========== ALERT SUKSES / ERROR ========== */
+.alert-container {
+  max-width: 850px;
+  margin: 20px auto 30px auto;
+  padding: 0 15px;
+}
+
+/* ========== TOMBOL TAMBAH ========== */
+button.btn-tambah {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+button.btn-tambah:hover {
+  background-color: #1e8449;
+}
+
+/* ========== TOMBOL AKSI ========== */
+.btn-aksi {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-edit {
+  background-color: #27ae60;
+  color: white;
+}
+.btn-edit:hover {
+  background-color: #1e8449;
+}
+
+.btn-hapus {
+  background-color: #e74c3c;
+  color: white;
+}
+.btn-hapus:hover {
+  background-color: #c0392b;
+}
+
+thead th {
+  background-color: #2e9636 !important;
+  color: white !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  font-weight: 600;
+}
+
+/* ========== RESPONSIVE KHUSUS CONTAINER ========== */
+@media (max-width: 768px) {
+  .container {
+    margin-left: 0;
+    padding: 20px;
+  }
+  thead.custom-green th {
+    background-color: #2e9636;
+    color: white;
+    text-align: center;
+  }
+  .pagination .page-link {
+    color: #2e7d32;
+  }
+  .pagination .page-item.active .page-link {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+    color: #fff;
+  }
+}
